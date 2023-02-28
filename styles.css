@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #FAFAFA;
+}
+
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+/* Navbar */
+
+nav {
+    background-color: white;
+    }
+
+    
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0;
+}
+
+.journal-href {
+    color: white;
+}
+
+.nav-href {
+    color: black;
+}
+
+
+.left-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-icon {
+    height: 50%;
+    margin-right: 0.5em;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    position: relative;
+}
+
+.hero {
+    position: absolute;
+    left: 2.5em;
+    bottom: 2em;
+    color: white;
+    width: 80%;
+}
+
+/* Grid Section */
+
+
+.post{
+    width: 60%;
+    margin: 5em auto 0;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding-top: 4em;
+}
+
+.blog {
+    width: 90%;
+    margin: 4em auto;
+    line-height: 2em;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #202020;
+    color: white;
+    padding: 0.5em;
+    margin-top: 2em;
+}
+
+.footer-info {
+   width: 80%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+
+
+
+/* About Me */
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    margin: 8em 2em 2em 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-blog {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+.blog-info {
+    width: 60%;
+    margin: 6em auto;
+}
+
+/*  */
+
+@media (min-width: 600px) {
+    .hero {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .hero {
+        position: absolute;
+        left: 0.5em;
+        bottom: 0.5em;
+        right: 0.5em;
+        color: white;
+        width: 100%;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4em;
+        margin: 8em 2em 2em 2em;
+    }
+
+    .img-blog {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+    }
+}
